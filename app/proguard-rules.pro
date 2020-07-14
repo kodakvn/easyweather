@@ -15,3 +15,7 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+## RETROLAMBDA
+-dontwarn java.lang.invoke.*
+-dontwarn **$$Lambda$*

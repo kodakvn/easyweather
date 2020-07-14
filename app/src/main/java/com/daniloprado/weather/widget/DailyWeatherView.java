@@ -1,13 +1,14 @@
 package com.daniloprado.weather.widget;
 
 import android.content.Context;
-import android.support.v4.content.res.ResourcesCompat;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.daniloprado.weather.R;
+
+import androidx.core.content.res.ResourcesCompat;
 
 public class DailyWeatherView extends FrameLayout {
 

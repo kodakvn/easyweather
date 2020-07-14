@@ -1,9 +1,6 @@
 package com.daniloprado.weather.view.main;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.app.ActionBar;
-import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.inputmethod.InputMethodManager;
 
@@ -14,6 +11,9 @@ import com.daniloprado.weather.view.base.BaseFragment;
 import com.daniloprado.weather.view.cityforecast.CityForecastFragment;
 import com.daniloprado.weather.view.citylist.CityListFragment;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.FragmentManager;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -22,7 +22,7 @@ public class MainActivity extends BaseActivity
         implements CityListFragment.Contract, FragmentManager.OnBackStackChangedListener {
 
     @BindView(R.id.toolbar)
-    Toolbar toolbar;
+	Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

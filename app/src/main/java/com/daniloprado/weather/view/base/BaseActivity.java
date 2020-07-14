@@ -1,10 +1,9 @@
 package com.daniloprado.weather.view.base;
 
-
-import android.support.v7.app.AppCompatActivity;
-
 import com.daniloprado.weather.MainApplication;
 import com.daniloprado.weather.dagger.DiComponent;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public abstract class BaseActivity extends AppCompatActivity {
 

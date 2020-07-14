@@ -1,13 +1,13 @@
 package com.daniloprado.weather.view.base;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.DialogFragment;
 import android.view.View;
 
 import com.daniloprado.weather.MainApplication;
 import com.daniloprado.weather.dagger.DiComponent;
 
+import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
 import butterknife.ButterKnife;
 
 public abstract class BaseDialogFragment extends DialogFragment {

@@ -3,13 +3,6 @@ package com.daniloprado.weather.view.citylist;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,22 +15,29 @@ import com.daniloprado.weather.model.City;
 import com.daniloprado.weather.util.ViewFlipperUtil;
 import com.daniloprado.weather.view.base.ContractFragment;
 import com.daniloprado.weather.view.cityadd.CityAddDialogFragment;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
 
+import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class CityListFragment extends ContractFragment<CityListFragment.Contract> implements CityListContract.View {
 
     @BindView(R.id.fab)
-    FloatingActionButton fab;
+	FloatingActionButton fab;
 
     @BindView(R.id.recyclerview)
-    RecyclerView recyclerView;
+	RecyclerView recyclerView;
 
     @BindView(R.id.error_layout)
     LinearLayout errorLayout;

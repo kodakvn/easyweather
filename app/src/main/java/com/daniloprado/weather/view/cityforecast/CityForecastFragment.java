@@ -1,9 +1,6 @@
 package com.daniloprado.weather.view.cityforecast;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.content.res.ResourcesCompat;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,6 +22,9 @@ import com.daniloprado.weather.widget.DailyWeatherView;
 
 import javax.inject.Inject;
 
+import androidx.annotation.Nullable;
+import androidx.core.content.res.ResourcesCompat;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import butterknife.BindView;
 
 public class CityForecastFragment extends BaseFragment implements CityForecastContract.View {
@@ -63,7 +63,7 @@ public class CityForecastFragment extends BaseFragment implements CityForecastCo
     ProgressBar progressBar;
 
     @BindView(R.id.swiperefreshlayout)
-    SwipeRefreshLayout swipeRefreshLayout;
+	SwipeRefreshLayout swipeRefreshLayout;
 
     @BindView(R.id.viewflipper)
     ViewFlipper viewFlipper;

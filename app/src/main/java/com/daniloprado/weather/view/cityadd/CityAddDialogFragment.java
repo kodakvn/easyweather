@@ -4,14 +4,6 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -29,11 +21,19 @@ import com.daniloprado.weather.R;
 import com.daniloprado.weather.model.City;
 import com.daniloprado.weather.util.ViewFlipperUtil;
 import com.daniloprado.weather.view.base.BaseDialogFragment;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.List;
 
 import javax.inject.Inject;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindView;
 
 public class CityAddDialogFragment extends BaseDialogFragment implements CityAddContract.View {
@@ -41,7 +41,7 @@ public class CityAddDialogFragment extends BaseDialogFragment implements CityAdd
     public static int REQUEST_CODE = 1;
 
     @BindView(R.id.toolbar)
-    Toolbar toolbar;
+	Toolbar toolbar;
 
     @BindView(R.id.main_layout)
     LinearLayout mainLayout;
@@ -50,7 +50,7 @@ public class CityAddDialogFragment extends BaseDialogFragment implements CityAdd
     EditText editTextCitySearch;
 
     @BindView(R.id.recyclerview_cities_found)
-    RecyclerView recyclerView;
+	RecyclerView recyclerView;
 
     @BindView(R.id.error_layout)
     LinearLayout errorLayout;
